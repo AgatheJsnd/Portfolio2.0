@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio · Agathe Josserand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#home">Accueil</a>
+                <a href="#projects">Projets</a>
+                <a href="#skills">Compétences</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">À propos</a>
+            </nav>
+            <div class="language-switch">
+                <span class="active">FR</span>
+                <span>/</span>
+                <span>EN</span>
+            </div>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Explorer la donnée & l'automatisation</p>
+                    <h1>Bonjour, je suis Agathe Josserand</h1>
+                    <p class="subtitle">
+                        Analyste orientée produit, j’imagine des expériences digitales centrées
+                        utilisateur, structurées par la donnée et amplifiées par l’automatisation.
+                        Je transforme les insights terrain en solutions concrètes, de la phase d’exploration
+                        jusqu’au pilotage opérationnel.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#projects">Découvrir mes projets</a>
+                        <a class="btn ghost" href="mailto:agathejosserand04@gmail.com">Discuter ensemble</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="profile-frame">
+                        <img src="assets/images/profile.png" alt="Portrait d'Agathe Josserand">
+                        <div class="status-pill">Disponible pour de nouveaux défis</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Mes Projets</span>
+                    <h2>Transformer les idées en expériences impactantes</h2>
+                    <p class="section-lead">
+                        Trois études de cas qui illustrent ma manière de diagnostiquer un besoin,
+                        structurer la réponse et livrer de la valeur rapidement grâce à la donnée,
+                        aux outils no-code et à l’automatisation.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                <div class="project-badge">Innovation produit</div>
+                <h3>Coloc Match</h3>
+                <span class="project-subtitle">Le Tinder de la colocation</span>
+                <img src="assets/images/logo-colocmatch.png" alt="Logo Coloc Match" class="project-thumbnail">
+                        <div class="project-tags">
+                            <span>Recherche utilisateur</span>
+                            <span>Analyse marché</span>
+                            <span>UX concept</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="https://www.loom.com/embed/d98870e96273409c9f86cbe635402a70?sid=71eb3418-f1f2-4fde-b39b-4031d810a611" target="_blank" rel="noopener noreferrer">
+                                Voir le prototype
+                            </a>
+                            <button class="btn primary outline" data-modal="modal-coloc">Détails</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-badge">Data Intelligence</div>
+                        <h3>Carrefour – Transformer la donnée brute en levier de décision</h3>
+                        <p>
+                            Un dashboard Looker Studio pour hiérarchiser les marchés clés et piloter les négociations
+                            commerciales à partir de données internationales hétérogènes.
+                        </p>
+                        <img src="assets/images/carrefour-embleme.png" alt="Dashboard Carrefour" class="project-thumbnail">
+                        <div class="project-tags">
+                            <span>Analyse data</span>
+                            <span>Dashboarding</span>
+                            <span>Storytelling</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="assets/images/carrefour-dashboard-2.png" target="_blank" rel="noopener noreferrer">
+                                Aperçu 1
+                            </a>
+                            <a class="btn ghost" href="assets/images/carrefour-dashboard-3.png" target="_blank" rel="noopener noreferrer">
+                                Aperçu 2
+                            </a>
+                            <button class="btn primary outline" data-modal="modal-carrefour">Détails</button>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-badge">Automatisation & IA</div>
+                        <h3>Her Third Place – Digitaliser une expérience humaine</h3>
+                        <p>
+                            Un environnement automatisé pour une communauté de femmes, du suivi des participantes
+                            à la gamification des feedbacks.
+                        </p>
+                        <img src="assets/images/her-third-place.png" alt="Automatisation pour Her Third Place" class="project-thumbnail">
+                        <div class="project-tags">
+                            <span>Automatisation</span>
+                            <span>Product Ops</span>
+                            <span>Engagement</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="https://www.loom.com/embed/74452db332094a09a5700d04891fc1d9?sid=9d5d8005-311e-45b7-af45-f570dcfed27c" target="_blank" rel="noopener noreferrer">
+                                Voir la démo
+                            </a>
+                            <button class="btn primary outline" data-modal="modal-htp">Détails</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-eyebrow">Tech Stack & Certifications</span>
+                    <h2>Un socle polyvalent orienté impact</h2>
+                    <p class="section-lead">
+                        Des outils pour investiguer, structurer, automatiser et livrer des solutions concrètes.
+                        Je combine data, IA et product pour accélérer la mise en œuvre.
+                    </p>
+                </div>
+
+                <div class="skills-groups">
+                    <div class="skills-group">
+                        <h3>Automatisation & Orchestration</h3>
+                        <div class="skill-tags">
+                            <span>Make</span>
+                            <span>Automatisation</span>
+                            <span>Zapier</span>
+                            <span>n8n</span>
+                            <span>PowerAutomate</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <h3>Data & Analytics</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>SQL</span>
+                            <span>NoSQL</span>
+                            <span>PowerBI</span>
+                            <span>Tableau</span>
+                            <span>Looker Studio</span>
+                            <span>Data Cleaning</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <h3>IA & Produits augmentés</h3>
+                        <div class="skill-tags">
+                            <span>RAG</span>
+                            <span>LLM</span>
+                            <span>OpenAI</span>
+                            <span>Mistral</span>
+                            <span>API</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <h3>Ops & Collaboration</h3>
+                        <div class="skill-tags">
+                            <span>Notion</span>
+                            <span>HubSpot</span>
+                            <span>Webflow</span>
+                            <span>Product Strategy</span>
+                            <span>Marketing</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-card">
+                <div class="contact-copy">
+                    <h2 class="contact-title">Contact</h2>
+                    <p class="contact-message">
+                        Écrivez-moi pour discuter d’un projet en cours, imaginer une prochaine collaboration
+                        ou simplement échanger sur vos idées.
+                    </p>
+                    <div class="contact-links">
+                        <a class="btn ghost" href="https://www.linkedin.com/in/agathe-josserand-/" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" role="presentation">
+                                    <rect width="24" height="24" rx="4" fill="#0A66C2" />
+                                    <text x="12" y="16" text-anchor="middle" font-size="11" font-family="Inter, sans-serif" font-weight="700" fill="#fff">in</text>
+                                </svg>
+                            </span>
+                            LinkedIn
+                        </a>
+                        <a class="btn ghost" href="https://www.notion.so" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" role="presentation">
+                                    <rect x="2" y="2" width="20" height="20" rx="4" fill="#000" />
+                                    <text x="12" y="16" text-anchor="middle" font-size="12" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#fff">N</text>
+                                </svg>
+                            </span>
+                            Notion
+                        </a>
+                    </div>
+                    <div class="contact-primary">
+                        <a class="btn ghost" href="https://github.com/AgatheJsnd" target="_blank" rel="noopener noreferrer">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" role="presentation">
+                                    <rect width="24" height="24" rx="4" fill="#181717" />
+                                    <path d="M12 5c-4.3 0-7.5 3.2-7.5 7.3 0 3.2 2 5.9 4.8 6.9.36.06.5-.15.5-.34 0-.17-.01-.74-.01-1.35-1.96.35-2.47-.46-2.63-.88-.08-.2-.42-.88-.72-1.06-.25-.15-.6-.52-.01-.53.56-.01.96.52 1.09.74.64 1.1 1.67.79 2.08.6.06-.45.25-.78.45-.96-1.73-.2-3.54-.86-3.54-3.83 0-.85.31-1.54.82-2.08-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.79a7.56 7.56 0 0 1 4.01 0c1.53-1 2.2-.79 2.2-.79.44 1.1.16 1.91.08 2.11.51.54.82 1.23.82 2.08 0 2.98-1.81 3.63-3.54 3.83.26.22.48.65.48 1.32 0 .95-.01 1.71-.01 1.95 0 .19.14.41.5.34 2.8-1 4.8-3.7 4.8-6.9C19.5 8.2 16.3 5 12 5z" fill="#fff"/>
+                                </svg>
+                            </span>
+                            GitHub
+                        </a>
+                        <div class="info-item">
+                            <span class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" role="presentation">
+                                    <rect width="24" height="24" rx="4" fill="rgba(255,255,255,0.12)" />
+                                    <path d="M4 7l8 6 8-6" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <rect x="4" y="7" width="16" height="10" rx="1.5" stroke="#fff" stroke-width="1.5" fill="none"/>
+                                </svg>
+                            </span>
+                            <a href="mailto:agathejosserand04@gmail.com">agathejosserand04@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/xbldrlay" method="POST">
+                    <div class="form-row">
+                        <label>
+                            <span>Nom</span>
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="_replyto" placeholder="vous@email.com" required>
+                        </label>
+                    </div>
+                    <label class="form-full">
+                        <span>Message</span>
+                        <textarea name="message" rows="4" placeholder="Expliquez votre projet ou votre besoin" required></textarea>
+                    </label>
+                    <button class="btn primary" type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="section alt">
+            <div class="container about-layout">
+                <div class="about-media">
+                    <div class="profile-frame">
+                        <img src="assets/images/profile.png" alt="Portrait d'Agathe Josserand">
+                    </div>
+                </div>
+                <div class="about-copy">
+                    <span class="section-eyebrow">À propos de moi</span>
+                    <h2>Mettre la donnée au service d’expériences utiles</h2>
+                    <p>
+                        Bonjour&nbsp;! Je suis Agathe, spécialisée en data intelligence, automatisation et
+                        conception d’expériences utilisateur. Je m’attache à comprendre les besoins réels,
+                        traduire ces insights en parcours cohérents puis les outiller avec les bons leviers
+                        technologiques.
+                    </p>
+                    <p>
+                        De la collecte intelligente (scraping, API, enquêtes) à la restitution actionnable
+                        (dashboards, automatisations, contenu), j’oriente chaque décision vers l’impact
+                        opérationnel. J’aime particulièrement travailler avec des équipes engagées,
+                        dans un climat de confiance où l’expérimentation rapide est encouragée.
+                    </p>
+                    <p>
+                        Curieuse et pédagogue, je documente chaque itération pour que les équipes soient autonomes.
+                        Mon objectif&nbsp;: transformer les contraintes en opportunités et livrer des solutions
+                        qui s’installent dans la durée.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Agathe Josserand. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="mailto:agathejosserand04@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/agathe-josserand-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="#projects">Projets</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal-coloc" aria-hidden="true">
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-coloc-title">
+            <button class="modal-close" data-close>&times;</button>
+            <div class="modal-body">
+                <h3 id="modal-coloc-title">Coloc Match – Le Tinder de la colocation</h3>
+                <h4>Le concept</h4>
+                <ul>
+                    <li>Application mobile pour faciliter la colocation étudiante avec un système de matching inspiré de Tinder</li>
+                    <li>L’utilisateur choisit un appartement puis match avec des profils compatibles</li>
+                    <li>Prise en compte des habitudes de vie, préférences et budget</li>
+                </ul>
+                <h4>Ce que l’on a fait</h4>
+                <ul>
+                    <li>Identifié les besoins via des questionnaires ciblés auprès d’étudiants</li>
+                    <li>Défini le concept et les fonctionnalités principales de l’application</li>
+                    <li>Réalisé une étude de marché et un modèle économique simple</li>
+                    <li>Conçu une maquette interactive et une landing page</li>
+                    <li>Collecté des retours utilisateurs (87&nbsp;% d’intérêt)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-carrefour" aria-hidden="true">
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-carrefour-title">
+            <button class="modal-close" data-close>&times;</button>
+            <div class="modal-body">
+                <h3 id="modal-carrefour-title">Carrefour – Transformer la donnée brute en levier de décision</h3>
+                <p>
+                    Dans le cadre d’un Business Deep Dive, nous avons travaillé sur une base de données
+                    internationale dense mais inexploitable. L’enjeu pour Carrefour&nbsp;: identifier les zones
+                    les plus rentables pour orienter les négociations commerciales à venir.
+                </p>
+                <p>
+                    En nettoyant et en croisant les données de dix pays, nous avons révélé des écarts entre
+                    contribution au chiffre d’affaires et marge réelle. Cette lecture nouvelle a permis de
+                    hiérarchiser les marchés qui méritaient une attention prioritaire, loin des intuitions de
+                    départ.
+                </p>
+                <p>
+                    Nous avons conçu un dashboard Looker Studio interactif, filtrable par pays, enseigne et
+                    catégorie produit. Il permet d’identifier en quelques minutes les zones critiques, comparer
+                    les KPIs clés (marge nette, CA, évolution N/N-1) et préparer les points de négociation.
+                </p>
+                <p class="modal-footnote">
+                    🛠️ Livrables clés&nbsp;: data cleaning, modèle de scoring, dashboard dynamique, support de
+                    restitution pour la direction commerciale.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-htp" aria-hidden="true">
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-htp-title">
+            <button class="modal-close" data-close>&times;</button>
+            <div class="modal-body">
+                <h3 id="modal-htp-title">Her Third Place – Digitaliser une expérience humaine</h3>
+                <p>
+                    Her Third Place est une startup qui organise des activités entre femmes pour renforcer
+                    le lien social. La fondatrice faisait face à un suivi manuel des participantes, un taux de
+                    réponse très faible aux questionnaires et des outils éclatés.
+                </p>
+                <p>
+                    J’ai réalisé un benchmark approfondi de cinq solutions concurrentes pour identifier les
+                    bonnes pratiques d’automatisation. Avec l’équipe projet, nous avons mis en place des
+                    workflows Make&nbsp;: suivi des inscriptions, rappels avant événements, envoi personnalisé
+                    de questionnaires.
+                </p>
+                <p>
+                    Nous avons également conçu une application interne pour centraliser membres, événements,
+                    feedbacks et analyses. La gamification des retours (système de points & récompenses) a
+                    doublé le taux de réponse, passant de 20&nbsp;% à 40&nbsp;%.
+                </p>
+                <p class="modal-footnote">
+                    🛠️ Livrables clés&nbsp;: cartographie des processus, scénarios Make, base Airtable, reporting
+                    d’impact.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-backdrop" data-close aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
