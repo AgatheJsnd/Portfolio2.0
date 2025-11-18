@@ -1,0 +1,6 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="96" height="96" rx="24" fill="#121212"/>
+  <path d="M26 64L34 32L48 60L62 32L70 64" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="78" text-anchor="middle" font-size="18" font-family="Inter, sans-serif" font-weight="700" fill="#FFFFFF">Mistral</text>
+</svg>
+

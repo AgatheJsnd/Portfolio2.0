@@ -12,21 +12,59 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <nav class="main-nav">
-                <a href="#home">Accueil</a>
-                <a href="#projects">Projets</a>
-                <a href="#skills">Compétences</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">À propos</a>
+            <nav class="pill-nav" id="pillNav">
+                <div class="pill-nav-container">
+                    <!-- Primary top edge ridge -->
+                    <div class="pill-edge-ridge"></div>
+                    
+                    <!-- Top hemisphere light catch -->
+                    <div class="pill-top-hemisphere"></div>
+                    
+                    <!-- Directional light - top left -->
+                    <div class="pill-directional-light"></div>
+                    
+                    <!-- Premium gloss reflection - main -->
+                    <div class="pill-gloss-main"></div>
+                    
+                    <!-- Secondary gloss accent -->
+                    <div class="pill-gloss-accent"></div>
+                    
+                    <!-- Left edge illumination -->
+                    <div class="pill-left-edge"></div>
+                    
+                    <!-- Right edge shadow -->
+                    <div class="pill-right-edge"></div>
+                    
+                    <!-- Bottom curvature - deep shadow -->
+                    <div class="pill-bottom-curvature"></div>
+                    
+                    <!-- Bottom edge contact shadow -->
+                    <div class="pill-bottom-shadow"></div>
+                    
+                    <!-- Inner diffuse glow -->
+                    <div class="pill-inner-glow"></div>
+                    
+                    <!-- Micro edge definition -->
+                    <div class="pill-edge-definition"></div>
+                    
+                    <!-- Navigation items container -->
+                    <div class="pill-nav-items">
+                        <!-- Collapsed state - show only active section -->
+                        <div class="pill-nav-collapsed">
+                            <span class="pill-active-label" id="activeLabel">Accueil</span>
+                        </div>
+                        
+                        <!-- Expanded state - show all sections -->
+                        <div class="pill-nav-expanded">
+                            <button class="pill-nav-item" data-section="home">Accueil</button>
+                            <button class="pill-nav-item" data-section="projects">Projets</button>
+                            <button class="pill-nav-item" data-section="skills">Compétences</button>
+                            <button class="pill-nav-item" data-section="contact">Contact</button>
+                            <button class="pill-nav-item" data-section="about">À propos</button>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <div class="language-switch">
-                <span class="active">FR</span>
-                <span>/</span>
-                <span>EN</span>
-            </div>
-            <button class="nav-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
         </div>
     </header>
 
@@ -70,15 +108,9 @@
 
                 <div class="projects-grid">
                     <article class="project-card">
-                <div class="project-badge">Innovation produit</div>
-                <h3>Coloc Match</h3>
-                <span class="project-subtitle">Le Tinder de la colocation</span>
-                <img src="assets/images/logo-colocmatch.png" alt="Logo Coloc Match" class="project-thumbnail">
-                        <div class="project-tags">
-                            <span>Recherche utilisateur</span>
-                            <span>Analyse marché</span>
-                            <span>UX concept</span>
-                        </div>
+                        <img src="assets/images/logo-colocmatch.png" alt="Logo Coloc Match" class="project-thumbnail">
+                        <h3>Coloc Match – Le Tinder de la colocation</h3>
+                        <div class="project-badge">Innovation produit</div>
                         <div class="project-actions">
                             <a class="btn ghost" href="https://www.loom.com/embed/d98870e96273409c9f86cbe635402a70?sid=71eb3418-f1f2-4fde-b39b-4031d810a611" target="_blank" rel="noopener noreferrer">
                                 Voir le prototype
@@ -88,18 +120,9 @@
                     </article>
 
                     <article class="project-card">
-                        <div class="project-badge">Data Intelligence</div>
-                        <h3>Carrefour – Transformer la donnée brute en levier de décision</h3>
-                        <p>
-                            Un dashboard Looker Studio pour hiérarchiser les marchés clés et piloter les négociations
-                            commerciales à partir de données internationales hétérogènes.
-                        </p>
                         <img src="assets/images/carrefour-embleme.png" alt="Dashboard Carrefour" class="project-thumbnail">
-                        <div class="project-tags">
-                            <span>Analyse data</span>
-                            <span>Dashboarding</span>
-                            <span>Storytelling</span>
-                        </div>
+                        <h3>Carrefour – Transformer la donnée brute en levier de décision</h3>
+                        <div class="project-badge">Data Intelligence</div>
                         <div class="project-actions">
                             <a class="btn ghost" href="assets/images/carrefour-dashboard-2.png" target="_blank" rel="noopener noreferrer">
                                 Aperçu 1
@@ -112,18 +135,9 @@
                     </article>
 
                     <article class="project-card">
-                        <div class="project-badge">Automatisation & IA</div>
+                        <img src="assets/images/her-third-place.png" alt="Automatisation pour Her Third Place" class="project-thumbnail project-thumbnail-contain">
                         <h3>Her Third Place – Digitaliser une expérience humaine</h3>
-                        <p>
-                            Un environnement automatisé pour une communauté de femmes, du suivi des participantes
-                            à la gamification des feedbacks.
-                        </p>
-                        <img src="assets/images/her-third-place.png" alt="Automatisation pour Her Third Place" class="project-thumbnail">
-                        <div class="project-tags">
-                            <span>Automatisation</span>
-                            <span>Product Ops</span>
-                            <span>Engagement</span>
-                        </div>
+                        <div class="project-badge">Automatisation & IA</div>
                         <div class="project-actions">
                             <a class="btn ghost" href="https://www.loom.com/embed/74452db332094a09a5700d04891fc1d9?sid=9d5d8005-311e-45b7-af45-f570dcfed27c" target="_blank" rel="noopener noreferrer">
                                 Voir la démo
@@ -146,51 +160,143 @@
                     </p>
                 </div>
 
-                <div class="skills-groups">
-                    <div class="skills-group">
-                        <h3>Automatisation & Orchestration</h3>
-                        <div class="skill-tags">
-                            <span>Make</span>
-                            <span>Automatisation</span>
-                            <span>Zapier</span>
-                            <span>n8n</span>
-                            <span>PowerAutomate</span>
+                <div class="skills-tabs">
+                    <button class="tab-button active" data-tab="tech-stack">Tech Stack</button>
+                    <button class="tab-button" data-tab="certifications">Certifications</button>
+                </div>
+
+                <div class="tab-content active" id="tech-stack">
+                    <div class="tech-carousel-wrapper">
+                        <button class="carousel-btn carousel-prev" aria-label="Voir les outils précédents">‹</button>
+                        <div class="tech-stack-carousel">
+                        <div class="tech-card" data-tech="v0">
+                            <img src="assets/images/v0-logo.png" alt="Logo V0" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">V0</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">V0</div>
+                                <div class="tech-tooltip-desc">Génération de composants UI avec IA</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills-group">
-                        <h3>Data & Analytics</h3>
-                        <div class="skill-tags">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>SQL</span>
-                            <span>NoSQL</span>
-                            <span>PowerBI</span>
-                            <span>Tableau</span>
-                            <span>Looker Studio</span>
-                            <span>Data Cleaning</span>
+                        <div class="tech-card" data-tech="airtable">
+                            <img src="assets/images/airtable.svg" alt="Logo Airtable" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Airtable</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Airtable</div>
+                                <div class="tech-tooltip-desc">Base de données relationnelle en ligne</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skills-group">
-                        <h3>IA & Produits augmentés</h3>
-                        <div class="skill-tags">
-                            <span>RAG</span>
-                            <span>LLM</span>
-                            <span>OpenAI</span>
-                            <span>Mistral</span>
-                            <span>API</span>
-                            <span>Docker</span>
+                        <div class="tech-card" data-tech="canva">
+                            <img src="assets/images/canva.svg" alt="Logo Canva" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Canva</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Canva</div>
+                                <div class="tech-tooltip-desc">Création graphique simplifiée</div>
+                            </div>
                         </div>
+                        <div class="tech-card" data-tech="hubspot">
+                            <img src="assets/images/hubspot.svg" alt="Logo HubSpot" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">HubSpot</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">HubSpot</div>
+                                <div class="tech-tooltip-desc">CRM et marketing automation</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="mistral">
+                            <img src="assets/images/mistral.svg" alt="Logo Mistral" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Mistral</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Mistral</div>
+                                <div class="tech-tooltip-desc">Modèles de langage IA avancés</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="looker">
+                            <img src="assets/images/looker-logo.svg" alt="Logo Looker" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Looker</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Looker</div>
+                                <div class="tech-tooltip-desc">Business intelligence et analytics</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="webflow">
+                            <img src="assets/images/webflow.svg" alt="Logo Webflow" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Webflow</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Webflow</div>
+                                <div class="tech-tooltip-desc">Design et développement web visuel</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="google-sheet">
+                            <img src="assets/images/google-sheet.svg" alt="Logo Google Sheet" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Google Sheet</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Google Sheet</div>
+                                <div class="tech-tooltip-desc">Tableur collaboratif en ligne</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="notion">
+                            <img src="assets/images/notion.svg" alt="Logo Notion" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Notion</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Notion</div>
+                                <div class="tech-tooltip-desc">Workspace tout-en-un pour équipes</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="sql">
+                            <img src="assets/images/sql.svg" alt="Logo SQL" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">SQL</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">SQL</div>
+                                <div class="tech-tooltip-desc">Langage de requête pour bases de données</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="make">
+                            <img src="assets/images/make-logo.svg" alt="Logo Make" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Make</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Make</div>
+                                <div class="tech-tooltip-desc">Automatisation de workflows</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="python">
+                            <img src="assets/images/python.svg" alt="Logo Python" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Python</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Python</div>
+                                <div class="tech-tooltip-desc">Langage de programmation polyvalent</div>
+                            </div>
+                        </div>
+                        <div class="tech-card" data-tech="bubble">
+                            <img src="assets/images/bubble-logo.svg" alt="Logo Bubble" class="tech-logo" loading="lazy" onerror="this.style.display='none'; this.closest('.tech-card').classList.add('no-logo');">
+                            <span class="tech-fallback">Bubble</span>
+                            <div class="tech-tooltip">
+                                <div class="tech-tooltip-name">Bubble</div>
+                                <div class="tech-tooltip-desc">Développement d'applications sans code</div>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-btn carousel-next" aria-label="Voir les outils suivants">›</button>
                     </div>
-                    <div class="skills-group">
-                        <h3>Ops & Collaboration</h3>
-                        <div class="skill-tags">
-                            <span>Notion</span>
-                            <span>HubSpot</span>
-                            <span>Webflow</span>
-                            <span>Product Strategy</span>
-                            <span>Marketing</span>
-                            <span>Git</span>
-                            <span>GitHub</span>
+                </div>
+
+                <div class="tab-content" id="certifications">
+                    <div class="certifications-grid">
+                        <div class="certification-card" data-cert="hackathon">
+                            <div class="cert-image">🏆</div>
+                            <h3>Hackathon</h3>
+                            <p class="cert-date">2023</p>
+                            <p class="cert-description">Participation et distinction dans un hackathon d'innovation</p>
+                        </div>
+                        <div class="certification-card" data-cert="toeic">
+                            <div class="cert-image">🌐</div>
+                            <h3>TOEIC</h3>
+                            <p class="cert-date">2022</p>
+                            <p class="cert-description">Certification en anglais professionnel</p>
+                        </div>
+                        <div class="certification-card" data-cert="master">
+                            <div class="cert-image">🎓</div>
+                            <h3>Master Marketing Spé Data</h3>
+                            <p class="cert-date">2021-2023</p>
+                            <p class="cert-description">Formation spécialisée en marketing data-driven</p>
                         </div>
                     </div>
                 </div>
@@ -247,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/xbldrlay" method="POST">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xovrvvqy" method="POST">
                     <div class="form-row">
                         <label>
                             <span>Nom</span>
@@ -262,7 +368,8 @@
                         <span>Message</span>
                         <textarea name="message" rows="4" placeholder="Expliquez votre projet ou votre besoin" required></textarea>
                     </label>
-                    <button class="btn primary" type="submit">Envoyer</button>
+                    <button class="btn primary" type="submit" id="submitBtn">Envoyer</button>
+                    <div class="form-status" id="formStatus"></div>
                 </form>
             </div>
         </section>
@@ -292,8 +399,21 @@
                     <p>
                         Curieuse et pédagogue, je documente chaque itération pour que les équipes soient autonomes.
                         Mon objectif&nbsp;: transformer les contraintes en opportunités et livrer des solutions
-                        qui s’installent dans la durée.
+                        qui s'installent dans la durée.
                     </p>
+                    
+                    <div class="quote-card" id="quoteCard">
+                        <div class="quote-icon">"</div>
+                        <p class="quote-text" id="quoteText">Chargement de la citation...</p>
+                        <p class="quote-author" id="quoteAuthor"></p>
+                    </div>
+                    
+                    <div class="news-section" id="newsSection">
+                        <h3 class="news-title">📰 Dernières actualités tech (01net)</h3>
+                        <div class="news-grid" id="newsGrid">
+                            <div class="news-loading">Chargement des actualités...</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -392,6 +512,18 @@
     </div>
 
     <div class="modal-backdrop" data-close aria-hidden="true"></div>
+
+    <!-- Certification Modal -->
+    <div class="cert-modal" id="certModal" aria-hidden="true">
+        <div class="cert-modal-backdrop" data-close-cert></div>
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" data-close-cert aria-label="Fermer">×</button>
+            <div class="cert-modal-image" id="certModalImage"></div>
+            <h3 class="cert-modal-title" id="certModalTitle"></h3>
+            <p class="cert-modal-date" id="certModalDate"></p>
+            <p class="cert-modal-description" id="certModalDescription"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
