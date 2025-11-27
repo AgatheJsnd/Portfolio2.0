@@ -401,80 +401,6 @@ if (quoteCard) {
     fetchQuote();
 }
 
-// News from RSS Feed via RSS2JSON
-const newsGrid = document.getElementById('newsGrid');
-
-async function fetchNews() {
-    try {
-        // Using RSS2JSON to convert RSS feed to JSON (works in frontend)
-        const rssUrl = 'https://www.01net.com/feed/';
-        const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`);
-        
-        if (!response.ok) {
-            throw new Error('Failed to fetch news');
-        }
-        
-        const data = await response.json();
-        
-        if (data && data.items && data.items.length > 0) {
-            // Clear loading message
-            newsGrid.innerHTML = '';
-            
-            // Display first 3 articles
-            data.items.slice(0, 3).forEach(article => {
-                const newsItem = document.createElement('div');
-                newsItem.className = 'news-item';
-                
-                const title = document.createElement('h4');
-                title.className = 'news-item-title';
-                title.textContent = article.title;
-                
-                const description = document.createElement('p');
-                description.className = 'news-item-description';
-                // Remove HTML tags from description
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = article.description || article.content || '';
-                const cleanText = tempDiv.textContent || tempDiv.innerText || 'Pas de description disponible.';
-                description.textContent = cleanText.substring(0, 150) + '...';
-                
-                const meta = document.createElement('div');
-                meta.className = 'news-item-meta';
-                
-                const source = document.createElement('span');
-                source.className = 'news-item-source';
-                source.textContent = '01net';
-                
-                const link = document.createElement('a');
-                link.className = 'news-item-link';
-                link.href = article.link;
-                link.target = '_blank';
-                link.rel = 'noopener noreferrer';
-                link.textContent = 'Lire l\'article →';
-                
-                meta.appendChild(source);
-                meta.appendChild(link);
-                
-                newsItem.appendChild(title);
-                newsItem.appendChild(description);
-                newsItem.appendChild(meta);
-                
-                newsGrid.appendChild(newsItem);
-            });
-            console.log('✅ Actualités chargées:', data.items.length, 'articles');
-        } else {
-            newsGrid.innerHTML = '<div class="news-loading">Aucune actualité disponible pour le moment.</div>';
-        }
-    } catch (error) {
-        console.error('❌ Error fetching news:', error);
-        newsGrid.innerHTML = '<div class="news-loading">Impossible de charger les actualités.</div>';
-    }
-}
-
-// Load news when page loads
-if (newsGrid) {
-    fetchNews();
-}
-
 // Contact Form Submission
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
@@ -520,3 +446,79 @@ if (contactForm) {
     });
 }
 
+// Media Modals (Video & Image)
+const videoModal = document.getElementById('videoModal');
+const imageModal = document.getElementById('imageModal');
+const videoFrame = document.getElementById('videoFrame');
+const imagePreview = document.getElementById('imagePreview');
+const mediaCloseButtons = document.querySelectorAll('[data-close-media]');
+
+// Open Video Modal
+document.querySelectorAll('[data-video]').forEach(button => {
+    button.addEventListener('click', () => {
+        const videoUrl = button.getAttribute('data-video');
+        if (videoUrl && videoModal && videoFrame) {
+            videoFrame.src = videoUrl;
+            videoModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+});
+
+// Open Image Modal
+document.querySelectorAll('[data-image]').forEach(button => {
+    button.addEventListener('click', () => {
+        const imageUrl = button.getAttribute('data-image');
+        if (imageUrl && imageModal && imagePreview) {
+            imagePreview.src = imageUrl;
+            imageModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+});
+
+// Close Media Modals
+function closeMediaModal(modal, frame) {
+    if (modal) {
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        // Clear the iframe/image src to stop playback
+        if (frame) {
+            frame.src = '';
+        }
+    }
+}
+
+mediaCloseButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        closeMediaModal(videoModal, videoFrame);
+        closeMediaModal(imageModal, imagePreview);
+    });
+});
+
+// Close on backdrop click
+[videoModal, imageModal].forEach(modal => {
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.classList.contains('media-modal-backdrop')) {
+                if (modal === videoModal) {
+                    closeMediaModal(videoModal, videoFrame);
+                } else {
+                    closeMediaModal(imageModal, imagePreview);
+                }
+            }
+        });
+    }
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        if (videoModal && videoModal.getAttribute('aria-hidden') === 'false') {
+            closeMediaModal(videoModal, videoFrame);
+        }
+        if (imageModal && imageModal.getAttribute('aria-hidden') === 'false') {
+            closeMediaModal(imageModal, imagePreview);
+        }
+    }
+});
