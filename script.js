@@ -232,12 +232,28 @@ const certModalDescription = document.getElementById('certModalDescription');
 const certCloseButtons = document.querySelectorAll('[data-close-cert]');
 
 function openCertModal(card) {
-    const image = card.querySelector('.cert-image').textContent;
+    const imageElement = card.querySelector('.cert-image img');
     const title = card.querySelector('h3').textContent;
     const date = card.querySelector('.cert-date').textContent;
-    const description = card.querySelector('.cert-description').textContent;
+    const fullDescription = card.getAttribute('data-cert-full-desc');
+    const shortDescription = card.querySelector('.cert-description').textContent;
+    const description = fullDescription || shortDescription;
     
-    certModalImage.textContent = image;
+    // Clear and set image
+    certModalImage.innerHTML = '';
+    if (imageElement) {
+        const modalImg = document.createElement('img');
+        modalImg.src = imageElement.src;
+        modalImg.alt = imageElement.alt;
+        modalImg.style.width = '350px';
+        modalImg.style.height = '350px';
+        modalImg.style.objectFit = 'contain';
+        modalImg.style.borderRadius = '28px';
+        certModalImage.appendChild(modalImg);
+    } else {
+        certModalImage.textContent = card.querySelector('.cert-image').textContent;
+    }
+    
     certModalTitle.textContent = title;
     certModalDate.textContent = date;
     certModalDescription.textContent = description;

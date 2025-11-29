@@ -1,9 +1,0 @@
-<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="96" height="96" rx="24" fill="#FF7A59"/>
-  <circle cx="72" cy="30" r="10" fill="#FFE5DE"/>
-  <circle cx="35" cy="53" r="16" fill="#FFE5DE"/>
-  <path d="M72 30L35 53" stroke="#FF7A59" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="35" cy="53" r="8" fill="#FF7A59"/>
-  <text x="48" y="76" text-anchor="middle" font-size="16" font-family="Inter, sans-serif" font-weight="700" fill="#FFE5DE">HubSpot</text>
-</svg>
-
