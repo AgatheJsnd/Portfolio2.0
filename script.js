@@ -14,6 +14,36 @@ if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
 }
 
+// Rotating Text Animation
+const rotatingTextEl = document.querySelector('.rotating-text');
+const rotatingTitles = [
+    'Analyse de données',
+    'Automatisation de processus',
+    'Conception de dashboards',
+    'Création d\'outils no-code',
+    'Gestion de projets digitaux'
+];
+
+if (rotatingTextEl) {
+    let currentIndex = 0;
+    
+    function updateRotatingText() {
+        rotatingTextEl.classList.add('fade-out');
+        
+        setTimeout(() => {
+            currentIndex = (currentIndex + 1) % rotatingTitles.length;
+            rotatingTextEl.textContent = rotatingTitles[currentIndex];
+            rotatingTextEl.classList.remove('fade-out');
+        }, 300);
+    }
+    
+    // Set initial text
+    rotatingTextEl.textContent = rotatingTitles[0];
+    
+    // Start rotation every 3 seconds
+    setInterval(updateRotatingText, 3000);
+}
+
 // Pill Navigation Logic
 const pillNav = document.getElementById('pillNav');
 const pillContainer = pillNav?.querySelector('.pill-nav-container');
