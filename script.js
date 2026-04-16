@@ -620,6 +620,13 @@ const portfolioData = {
             description: "Mise en place d’un système automatisé combinant agent conversationnel et scénarios Make, capable d’analyser et répondre aux leads.",
             outils: ["Make", "Mistral AI"],
             objectif: "Transformer une solution technique en discours clair et percutant pour convaincre des décideurs non techniques."
+        },
+        {
+            nom: "LVMH",
+            type: "Strategic Analytics",
+            description: "Système d’analyse basé sur l’IA pour structurer et interpréter automatiquement les feedbacks clients du secteur luxe.",
+            outils: ["Python", "Cursor", "GitHub"],
+            objectif: "Transformer des retours clients discrets en leviers stratégiques pour le retail."
         }
     ],
     outils: {
