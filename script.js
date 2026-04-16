@@ -789,14 +789,14 @@ function getAIResponse(message) {
     
     // Aide
     if (lowerMessage.includes('aide') || lowerMessage.includes('help') || lowerMessage.includes('quoi')) {
-        return "Je peux vous renseigner sur :<br>• Les <strong>projets</strong> d'Agathe (Coloc Match, Carrefour, Her Third Place)<br>• Ses <strong>compétences</strong> et outils<br>• Comment la <strong>contacter</strong><br>• <strong>Qui</strong> elle est<br><br>Posez-moi votre question ! 😊";
+        return "Je peux vous renseigner sur :<br>• Les <strong>projets</strong> d'Agathe (Coloc Match, Carrefour, LVMH, Licter...)<br>• Ses <strong>compétences</strong> et outils<br>• Comment la <strong>contacter</strong><br>• <strong>Qui</strong> elle est<br><br>Posez-moi votre question ! 😊";
     }
     
     // Détection de sujets hors-sujet (recettes, météo, etc.)
     const horssSujet = ['recette', 'cuisine', 'manger', 'météo', 'temps qu\'il fait', 'sport', 'foot', 'musique', 'film', 'série', 'jeu', 'actualité', 'news', 'politique'];
     for (const sujet of horssSujet) {
         if (lowerMessage.includes(sujet)) {
-            return "Oups, je ne peux pas répondre à ça ! 😅 Je suis l'assistant d'Agathe et je suis spécialisé uniquement sur son portfolio.<br><br>Je peux vous parler de :<br>• Ses <strong>projets</strong> (Coloc Match, Carrefour, Her Third Place)<br>• Ses <strong>compétences</strong> et outils<br>• Comment la <strong>contacter</strong><br>• <strong>Qui</strong> elle est";
+            return "Oups, je ne peux pas répondre à ça ! 😅 Je suis l'assistant d'Agathe et je suis spécialisé uniquement sur son portfolio.<br><br>Je peux vous parler de :<br>• Ses <strong>projets</strong> (Coloc Match, Carrefour, LVMH, Licter, Hackaton...)<br>• Ses <strong>compétences</strong> et outils<br>• Comment la <strong>contacter</strong><br>• <strong>Qui</strong> elle est";
         }
     }
     
