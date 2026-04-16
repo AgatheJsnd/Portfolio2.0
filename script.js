@@ -611,7 +611,7 @@ const portfolioData = {
             nom: "Licter", 
             type: "Market Intelligence", 
             description: "Système de collecte automatisée et dashboard analytics pour démocratiser l'accès aux données marché et concurrentielles.",
-            outils: ["Scraping", "Dashboard Analytics", "AI Agent"],
+            outils: ["Claude", "Make", "Dust"],
             objectif: "Permettre des décisions rapides et éclairées grâce à une vision unifiée du marché."
         },
     ],
