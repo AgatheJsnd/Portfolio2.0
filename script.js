@@ -615,11 +615,11 @@ const portfolioData = {
             objectif: "Permettre des décisions rapides et éclairées grâce à une vision unifiée du marché."
         },
         {
-            nom: "Services & Automatisation",
-            type: "Freelance & IA",
-            description: "Accompagnement et automatisation de processus métiers pour des clients freelance en utilisant des outils no-code et des agents IA.",
+            nom: "Hackaton 3M",
+            type: "AI Automation",
+            description: "Mise en place d’un système automatisé combinant agent conversationnel et scénarios Make, capable d’analyser et répondre aux leads.",
             outils: ["Make", "Malt", "Mistral AI"],
-            objectif: "Optimiser la productivité et automatiser les flux de travail complexes."
+            objectif: "Transformer une solution technique en discours clair et percutant pour convaincre des décideurs non techniques."
         }
     ],
     outils: {
