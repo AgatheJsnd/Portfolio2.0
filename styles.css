@@ -797,12 +797,13 @@ a {
 }
 
 .project-thumbnail-multi {
-    height: 180px;
+    height: 200px; /* Slightly taller to fit the vertical stack */
     background: rgba(255, 255, 255, 0.45);
     display: flex;
+    flex-direction: column; /* Stacked vertically as requested */
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 12px;
     padding: 20px;
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
