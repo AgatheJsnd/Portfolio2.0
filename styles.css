@@ -792,7 +792,7 @@ a {
 
 .project-thumbnail-contain {
     object-fit: contain;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 20px;
 }
 
