@@ -606,7 +606,14 @@ const portfolioData = {
             description: "Expérience automatisée et gamifiée pour le suivi des participantes, de l'inscription au retour post-activité.",
             outils: ["Airtable", "Notion", "Make", "Typeform"],
             objectif: "Fluidifier le suivi et renforcer l'engagement via la gamification."
-        }
+        },
+        { 
+            nom: "Licter", 
+            type: "Market Intelligence", 
+            description: "Système de collecte automatisée et dashboard analytics pour démocratiser l'accès aux données marché et concurrentielles.",
+            outils: ["Scraping", "Dashboard Analytics", "AI Agent"],
+            objectif: "Permettre des décisions rapides et éclairées grâce à une vision unifiée du marché."
+        },
     ],
     outils: {
         "v0": { nom: "V0", desc: "Construit interfaces instantanément" },
