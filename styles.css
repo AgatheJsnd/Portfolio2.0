@@ -798,7 +798,7 @@ a {
 
 .project-thumbnail-multi {
     height: 200px; /* Slightly taller to fit the vertical stack */
-    background: rgba(255, 255, 255, 0.45);
+    background: #ffffff; /* Changed to solid white as requested */
     display: flex;
     flex-direction: column; /* Stacked vertically as requested */
     align-items: center;
