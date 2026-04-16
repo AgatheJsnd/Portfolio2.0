@@ -671,6 +671,42 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.projects-more {
+    margin-top: 24px;
+}
+
+.projects-more-btn {
+    display: table;
+    margin: 0 auto;
+    background: transparent;
+    border: 1px solid rgba(214, 65, 89, 0.35);
+    border-radius: 999px;
+    padding: 10px 20px;
+    color: #d64159;
+    font: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.projects-more-btn::-webkit-details-marker {
+    display: none;
+}
+
+.projects-more-btn::marker {
+    content: '';
+}
+
+.projects-more-btn:hover,
+.projects-more-btn:focus-visible {
+    background: rgba(214, 65, 89, 0.08);
+    border-color: rgba(214, 65, 89, 0.55);
+    outline: none;
+}
+
+.projects-grid-more {
+    margin-top: 24px;
+}
+
 .project-card {
     background: rgba(255, 255, 255, 0.6);
     border-radius: var(--radius-lg);
@@ -791,6 +827,19 @@ a {
 .project-card .btn.primary.outline:focus-visible {
     background: rgba(244, 93, 112, 0.12);
     border-color: #f45d70;
+}
+
+.project-placeholder-media {
+    height: 200px;
+    width: 100%;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(214, 65, 89, 0.15);
+    background: linear-gradient(135deg, rgba(255, 142, 123, 0.15) 0%, rgba(214, 65, 89, 0.08) 100%);
+    display: grid;
+    place-items: center;
+    color: #d64159;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 /* Skills Tabs */
@@ -1833,6 +1882,140 @@ a {
 .modal-body h3 {
     color: var(--text);
     margin-top: 0;
+}
+
+.modal-dialog-coloc {
+    max-width: 920px;
+}
+
+.modal-body-coloc {
+    color: var(--text);
+}
+
+.coloc-story-layout {
+    display: grid;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.coloc-story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.coloc-story-card {
+    padding: 24px 26px;
+    border-radius: 22px;
+    border: 1px solid rgba(223, 200, 181, 0.32);
+    box-shadow: 0 8px 24px rgba(18, 18, 30, 0.025);
+}
+
+.coloc-story-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.72;
+    color: rgba(26, 26, 26, 0.68);
+}
+
+.coloc-story-card--enjeu {
+    background: #fff4ef;
+    border-color: rgba(255, 142, 123, 0.28);
+    padding: 18px 20px;
+}
+
+.coloc-story-card--problem,
+.coloc-story-card--solution {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    align-self: start;
+}
+
+.coloc-story-card--impact {
+    background: #ffece4;
+    border-color: rgba(255, 142, 123, 0.32);
+    box-shadow: none;
+    padding: 18px 20px;
+}
+
+.coloc-story-card--impact p,
+.coloc-story-card--impact .coloc-story-title {
+    color: #d64159;
+}
+
+.coloc-story-title {
+    margin: 0 0 10px;
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: #1d2340;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.coloc-story-quote {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.55;
+    color: #2f3048;
+}
+
+.coloc-story-card--enjeu .coloc-story-title {
+    color: #d64159;
+}
+
+.coloc-story-card--enjeu .coloc-story-title::before {
+    content: "";
+    width: 15px;
+    height: 11px;
+    border: 1.8px solid #d64159;
+    border-radius: 4px;
+    display: inline-block;
+    flex: 0 0 auto;
+    opacity: 0.95;
+}
+
+.coloc-story-card--problem .coloc-story-title::before,
+.coloc-story-card--solution .coloc-story-title::before,
+.coloc-story-card--impact .coloc-story-title::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #d64159;
+    display: inline-block;
+    flex: 0 0 auto;
+}
+
+.coloc-story-card--impact .coloc-story-title::before {
+    background: #d64159;
+    box-shadow: 0 0 0 3px rgba(214, 65, 89, 0.14);
+}
+
+.coloc-story-card--impact p {
+    color: rgba(214, 65, 89, 0.88);
+}
+
+@media (max-width: 768px) {
+    .modal-dialog-coloc {
+        padding: 24px 18px;
+    }
+
+    .coloc-story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coloc-story-card {
+        padding: 20px 18px;
+        border-radius: 18px;
+    }
+
+    .coloc-story-quote {
+        font-size: 0.95rem;
+    }
 }
 
 .modal-footnote {

@@ -186,6 +186,65 @@
                         </div>
                     </article>
                 </div>
+
+                <details class="projects-more">
+                    <summary class="projects-more-btn">Afficher plus de projets</summary>
+
+                    <div class="projects-grid projects-grid-more">
+                        <article class="project-card">
+                            <img src="assets/images/lvmh.png" alt="Aperçu du projet LVMH"
+                                class="project-thumbnail project-thumbnail-contain">
+                            <h3>LVMH</h3>
+                            <div class="project-badge">Strategic Analytics</div>
+                            <div class="project-actions">
+                                <button class="btn primary outline" data-modal="modal-lvmh">Détails</button>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="assets/images/carrefour-embleme.png" alt="Dashboard Carrefour"
+                                class="project-thumbnail project-thumbnail-contain">
+                            <h3>Carrefour</h3>
+                            <div class="project-badge">Data Intelligence</div>
+                            <div class="project-actions">
+                                <button class="btn ghost"
+                                    data-video="https://www.loom.com/embed/f2aa688a7c7c4e62ac4a8222feb12904">
+                                    Voir le prototype
+                                </button>
+                                <button class="btn primary outline" data-modal="modal-carrefour">Détails</button>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="assets/images/carrefour-embleme.png" alt="Dashboard Carrefour"
+                                class="project-thumbnail project-thumbnail-contain">
+                            <h3>Carrefour</h3>
+                            <div class="project-badge">Data Intelligence</div>
+                            <div class="project-actions">
+                                <button class="btn ghost"
+                                    data-video="https://www.loom.com/embed/f2aa688a7c7c4e62ac4a8222feb12904">
+                                    Voir le prototype
+                                </button>
+                                <button class="btn primary outline" data-modal="modal-carrefour">Détails</button>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="assets/images/carrefour-embleme.png" alt="Dashboard Carrefour"
+                                class="project-thumbnail project-thumbnail-contain">
+                            <h3>Carrefour</h3>
+                            <div class="project-badge">Data Intelligence</div>
+                            <div class="project-actions">
+                                <button class="btn ghost"
+                                    data-video="https://www.loom.com/embed/f2aa688a7c7c4e62ac4a8222feb12904">
+                                    Voir le prototype
+                                </button>
+                                <button class="btn primary outline" data-modal="modal-carrefour">Détails</button>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+
             </div>
         </section>
 
@@ -627,97 +686,123 @@
 
     <!-- Coloc Match Modal -->
     <div class="modal" id="modal-coloc" aria-hidden="true">
-        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-coloc-title">
+        <div class="modal-dialog modal-dialog-coloc" role="dialog" aria-modal="true" aria-labelledby="modal-coloc-title">
             <button class="modal-close" data-close>&times;</button>
-            <div class="modal-body">
+            <div class="modal-body modal-body-coloc">
                 <div class="modal-header-row">
                     <img src="assets/images/logo-colocmatch.png" alt="Logo Coloc Match" class="modal-logo">
                     <h3 id="modal-coloc-title" style="margin-right: auto;">Coloc Match</h3>
                 </div>
 
-                <h4 class="modal-section-title">Objectif</h4>
-                <p>
-                    Faciliter la recherche de colocation pour les étudiants en proposant une solution digitale qui match
-                    automatiquement les profils compatibles selon leurs habitudes de vie, préférences et budget.
-                </p>
+                <div class="coloc-story-layout">
+                    <section class="coloc-story-card coloc-story-card--enjeu">
+                        <h4 class="coloc-story-title">Enjeu du projet</h4>
+                        <p class="coloc-story-quote">
+                            “Faciliter la recherche de colocation étudiante en proposant une solution centrée sur la
+                            compatibilité entre profils.”
+                        </p>
+                    </section>
 
-                <h4 class="modal-section-title">Approche</h4>
-                <ul class="modal-list">
-                    <li>Création d’un système de matching inspiré de Tinder, centré sur les critères de compatibilité en
-                        colocation.</li>
-                    <li>Conception d’une maquette interactive et d’une landing page pour illustrer le parcours
-                        utilisateur.
-                    </li>
-                    <li>Diffusion d’un questionnaire auprès d’étudiants pour valider l’intérêt et affiner les
-                        fonctionnalités (87 % d’intérêt).</li>
-                </ul>
+                    <div class="coloc-story-grid">
+                        <section class="coloc-story-card coloc-story-card--problem">
+                            <h4 class="coloc-story-title">Le Problème</h4>
+                            <p>
+                                Trouver un logement en colocation est long, stressant et peu efficace. Les étudiants
+                                doivent gérer à la fois la recherche d’appartement et la compatibilité entre
+                                colocataires, sans outil adapté.
+                            </p>
+                        </section>
 
-                <h4 class="modal-section-title">Données</h4>
-                <p>
-                    Données collectées via formulaires Tally ainsi que l’analyse des réponses et prototypage réalisé sur
-                    Figma.
-                </p>
+                        <section class="coloc-story-card coloc-story-card--solution">
+                            <h4 class="coloc-story-title">La Solution</h4>
+                            <p>
+                                Création de Coloc Match, une application inspirée de Tinder permettant de choisir un
+                                appartement et de matcher avec des colocataires selon leurs habitudes, préférences et
+                                budget. Le projet s’appuie sur une analyse des besoins utilisateurs via questionnaires
+                                pour concevoir une solution pertinente.
+                            </p>
+                        </section>
+                    </div>
+
+                    <section class="coloc-story-card coloc-story-card--impact">
+                        <h4 class="coloc-story-title">L’Impact</h4>
+                        <p>
+                            87 % des étudiants interrogés ont montré un intérêt pour la solution. Développement d’un
+                            prototype fonctionnel (maquette et landing page) validant la faisabilité du concept et son
+                            potentiel d’usage.
+                        </p>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="modal" id="modal-carrefour" aria-hidden="true">
-        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-carrefour-title">
+        <div class="modal-dialog modal-dialog-coloc" role="dialog" aria-modal="true" aria-labelledby="modal-carrefour-title">
             <button class="modal-close" data-close>&times;</button>
-            <div class="modal-body">
-                <div class="modal-content-wrapper">
-                    <div class="modal-main-content">
-                        <div class="modal-header-row">
-                            <img src="assets/images/carrefour-embleme.png" alt="Logo Carrefour" class="modal-logo">
-                            <h3 id="modal-carrefour-title">Carrefour</h3>
-                            <div class="modal-tools-grid">
-                                <span class="modal-tools-label">Outils</span>
-                                <div class="modal-tools-icons">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg"
-                                        alt="Google Sheets" class="modal-tool-icon" title="Google Sheets">
-                                    <img src="assets/images/looker-logo.svg" alt="Looker Studio" class="modal-tool-icon"
-                                        title="Looker Studio">
-                                </div>
-                            </div>
+            <div class="modal-body modal-body-coloc">
+                <div class="modal-header-row">
+                    <img src="assets/images/carrefour-embleme.png" alt="Logo Carrefour" class="modal-logo">
+                    <h3 id="modal-carrefour-title">Carrefour</h3>
+                    <div class="modal-tools-grid">
+                        <span class="modal-tools-label">Outils</span>
+                        <div class="modal-tools-icons">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg"
+                                alt="Google Sheets" class="modal-tool-icon" title="Google Sheets">
+                            <img src="assets/images/looker-logo.svg" alt="Looker Studio" class="modal-tool-icon"
+                                title="Looker Studio">
                         </div>
-                        <h4 class="modal-section-title">Objectif</h4>
-                        <p>
-                            Identifier les fournisseurs stratégiques et les produits à fort enjeu en analysant les
-                            écarts de
-                            prix entre pays croisés avec les volumes d’achat, dans le but de prioriser les actions de
-                            négociation internationale de Carrefour et maximiser les gains économiques.
-                        </p>
-
-                        <h4 class="modal-section-title">Approche</h4>
-                        <ul class="modal-list">
-                            <li>Création d’un classement des fournisseurs basé sur leur potentiel d’impact économique,
-                                en
-                                combinant poids dans le chiffre d’affaires et marges réalisées.</li>
-                            <li>Détection des produits critiques où une harmonisation des prix pourrait générer jusqu’à
-                                plusieurs millions d’euros d’économies.</li>
-                            <li>Conception d’un dashboard interactif et filtrable (par pays, enseigne et catégorie
-                                produit),
-                                facilitant la lecture rapide des indicateurs clés et la prise de décision priorisée.
-                            </li>
-                        </ul>
-
-                        <h4 class="modal-section-title">Données & outils</h4>
-                        <p>
-                            Données connectées à Google Sheets, nettoyées et structurées, puis visualisées dans Looker
-                            Studio
-                            pour garantir une restitution claire, fiable et directement exploitable par les équipes
-                            décisionnelles.
-                        </p>
                     </div>
+                </div>
+
+                <div class="coloc-story-layout">
+                    <section class="coloc-story-card coloc-story-card--enjeu">
+                        <h4 class="coloc-story-title">Enjeu en entreprise</h4>
+                        <p class="coloc-story-quote">
+                            “Rendre exploitable une donnée complexe pour des acheteurs non-techniques, afin
+                            d’optimiser les négociations internationales.”
+                        </p>
+                    </section>
+
+                    <div class="coloc-story-grid">
+                        <section class="coloc-story-card coloc-story-card--problem">
+                            <h4 class="coloc-story-title">Le Problème</h4>
+                            <p>
+                                Manque de visibilité claire sur la performance des fournisseurs à l’échelle
+                                internationale, avec des données dispersées et difficiles à comparer. Cette complexité
+                                empêchait d’identifier rapidement les leviers de rentabilité et de prioriser
+                                efficacement les négociations.
+                            </p>
+                        </section>
+
+                        <section class="coloc-story-card coloc-story-card--solution">
+                            <h4 class="coloc-story-title">La Solution</h4>
+                            <p>
+                                Création d’un dashboard interactif sur Looker Studio, consolidant les données
+                                multi-pays pour offrir une lecture simple et stratégique. L’outil permet d’analyser les
+                                écarts de prix, les volumes d’achat et d’identifier les fournisseurs et produits à fort
+                                enjeu, avec un système de filtres par pays, enseigne et catégorie.
+                            </p>
+                        </section>
+                    </div>
+
+                    <section class="coloc-story-card coloc-story-card--impact">
+                        <h4 class="coloc-story-title">L’Impact</h4>
+                        <p>
+                            Accès rapide à des indicateurs clés permettant de prioriser les négociations et d’identifier
+                            des opportunités pouvant générer plusieurs millions d’euros d’économies, tout en facilitant
+                            la prise de décision pour les équipes métier.
+                        </p>
+                    </section>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="modal" id="modal-htp" aria-hidden="true">
-        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-htp-title">
+        <div class="modal-dialog modal-dialog-coloc" role="dialog" aria-modal="true" aria-labelledby="modal-htp-title">
             <button class="modal-close" data-close>&times;</button>
-            <div class="modal-body">
+            <div class="modal-body modal-body-coloc">
                 <div class="modal-header-row">
                     <img src="assets/images/her-third-place.png" alt="Logo Her Third Place" class="modal-logo">
                     <h3 id="modal-htp-title" style="margin-right: auto;">Her Third Place</h3>
@@ -726,43 +811,110 @@
                         <div class="modal-tools-icons">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Airtable_Logo.svg"
                                 alt="Airtable" class="modal-tool-icon" title="Airtable">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
-                                alt="Notion" class="modal-tool-icon" title="Notion">
+                            <img src="https://cdn.simpleicons.org/make/6D00CC"
+                                alt="Make" class="modal-tool-icon" title="Make">
                         </div>
                     </div>
                 </div>
 
-                <h4 class="modal-section-title">Objectif</h4>
-                <p>
-                    Fluidifier le suivi des participantes et renforcer leur engagement à travers une expérience
-                    automatisée
-                    et gamifiée, depuis l’inscription jusqu’au retour post-activité.
-                </p>
+                <div class="coloc-story-layout">
+                    <section class="coloc-story-card coloc-story-card--enjeu">
+                        <h4 class="coloc-story-title">Enjeu en Startup</h4>
+                        <p class="coloc-story-quote">
+                            "Structurer et automatiser l’expérience utilisateur pour améliorer l’engagement et le suivi
+                            des participantes."
+                        </p>
+                    </section>
 
-                <h4 class="modal-section-title">Points clés</h4>
-                <ul class="modal-list">
-                    <li>Transformation d’un formulaire existant, long et peu engageant, en une expérience ludique via un
-                        système de points et une roulette de réduction, pour inciter les participantes à aller jusqu’au
-                        bout
-                        (gamification).</li>
-                    <li>Envoi automatique d’un e-mail d’annonce à chaque nouvelle activité ajoutée dans la base de
-                        données.
-                    </li>
-                    <li>Envoi automatisé d’un formulaire de retour après chaque participation, pour recueillir les
-                        impressions à chaud.</li>
-                    <li>Mise en place d’un formulaire dynamique Typeform, dont la longueur s’adapte aux réponses, pour
-                        une
-                        meilleure expérience utilisateur.</li>
-                </ul>
+                    <div class="coloc-story-grid">
+                        <section class="coloc-story-card coloc-story-card--problem">
+                            <h4 class="coloc-story-title">Le Problème</h4>
+                            <p>
+                                Suivi des participantes manuel, lent et source d’erreurs. Faible engagement avec moins
+                                de 20 % de réponses aux questionnaires. Outils dispersés rendant la gestion complexe et
+                                inefficace.
+                            </p>
+                        </section>
 
-                <h4 class="modal-section-title">Informations techniques</h4>
-                <p>
-                    Les automatisations sont orchestrées via Make, Airtable pour la gestion des données d’activités
-                    ainsi
-                    que pour le stockage des retours, et Typeform pour la collecte conditionnelle des avis. Le site
-                    vitrine conçu permet de centraliser tous les flux utilisateurs et d’assurer une expérience simple,
-                    interactive et cohérente.
-                </p>
+                        <section class="coloc-story-card coloc-story-card--solution">
+                            <h4 class="coloc-story-title">La Solution</h4>
+                            <p>
+                                Création d’un site centralisé regroupant activités, échanges et suivi. Mise en place
+                                d’automatisations (emails, rappels, notifications). Gamification des questionnaires
+                                (points, récompenses) pour augmenter l’engagement. Formulaires dynamiques (Typeform)
+                                adaptés aux réponses utilisateurs.
+                            </p>
+                        </section>
+                    </div>
+
+                    <section class="coloc-story-card coloc-story-card--impact">
+                        <h4 class="coloc-story-title">L’Impact</h4>
+                        <p>
+                            Expérience utilisateur plus fluide et engageante. Taux de réponse doublé (20 % → 40 %).
+                            Gain de temps et meilleure gestion grâce à l’automatisation.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-lvmh" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-coloc" role="dialog" aria-modal="true" aria-labelledby="modal-lvmh-title">
+            <button class="modal-close" data-close>&times;</button>
+            <div class="modal-body modal-body-coloc">
+                <div class="modal-header-row">
+                    <img src="assets/images/lvmh.png" alt="Aperçu du projet LVMH" class="modal-logo">
+                    <h3 id="modal-lvmh-title" style="margin-right: auto;">LVMH</h3>
+                    <div class="modal-tools-grid">
+                        <span class="modal-tools-label">Outils</span>
+                        <div class="modal-tools-icons">
+                            <img src="https://cdn.simpleicons.org/python/3776AB"
+                                alt="Python" class="modal-tool-icon" title="Python">
+                            <img src="assets/images/cursor-logo.png"
+                                alt="Cursor" class="modal-tool-icon" title="Cursor">
+                            <img src="https://cdn.simpleicons.org/github/181717"
+                                alt="GitHub" class="modal-tool-icon" title="GitHub">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coloc-story-layout">
+                    <section class="coloc-story-card coloc-story-card--enjeu">
+                        <h4 class="coloc-story-title">Enjeu en entreprise</h4>
+                        <p class="coloc-story-quote">
+                            "Transformer des retours clients discrets en leviers stratégiques, sans jamais compromettre
+                            les standards de confidentialité propres au secteur du luxe."
+                        </p>
+                    </section>
+
+                    <div class="coloc-story-grid">
+                        <section class="coloc-story-card coloc-story-card--problem">
+                            <h4 class="coloc-story-title">Le Problème</h4>
+                            <p>
+                                Les informations issues du terrain sont riches mais peu structurées, ce qui limite leur
+                                utilisation dans les prises de décision à forte valeur.
+                            </p>
+                        </section>
+
+                        <section class="coloc-story-card coloc-story-card--solution">
+                            <h4 class="coloc-story-title">La Solution</h4>
+                            <p>
+                                Développement d’un système d’analyse basé sur l’IA permettant de structurer et
+                                d’interpréter automatiquement les feedbacks clients afin d’en faire ressortir des
+                                insights exploitables.
+                            </p>
+                        </section>
+                    </div>
+
+                    <section class="coloc-story-card coloc-story-card--impact">
+                        <h4 class="coloc-story-title">L’Impact</h4>
+                        <p>
+                            Une meilleure lecture des attentes clients, permettant d’orienter plus finement les
+                            stratégies retail et d’améliorer la performance des points de vente.
+                        </p>
+                    </section>
+                </div>
             </div>
         </div>
     </div>
