@@ -793,7 +793,7 @@ a {
 .project-thumbnail-contain {
     object-fit: contain;
     background-color: transparent;
-    padding: 20px;
+    padding: 8px; /* Reduced from 20px to 'zoom' the logo */
 }
 
 .project-tags {
@@ -1640,9 +1640,14 @@ a {
 }
 
 .modal-logo {
-    height: 64px;
+    height: 72px; /* Slightly larger */
     width: auto;
     display: block;
+    background: white;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 
