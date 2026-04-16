@@ -857,3 +857,16 @@ if (aiChatToggle && aiChatContainer) {
         }
     });
 }
+
+// Toggle "Afficher plus" button text
+const projectDetails = document.querySelector('.projects-more');
+if (projectDetails) {
+    const summary = projectDetails.querySelector('summary');
+    projectDetails.addEventListener('toggle', () => {
+        if (projectDetails.open) {
+            summary.textContent = 'Afficher moins de projets';
+        } else {
+            summary.textContent = 'Afficher plus de projets';
+        }
+    });
+}
