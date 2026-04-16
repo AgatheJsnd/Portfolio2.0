@@ -618,7 +618,7 @@ const portfolioData = {
             nom: "Hackaton 3M",
             type: "AI Automation",
             description: "Mise en place d’un système automatisé combinant agent conversationnel et scénarios Make, capable d’analyser et répondre aux leads.",
-            outils: ["Make", "Malt", "Mistral AI"],
+            outils: ["Make", "Mistral AI"],
             objectif: "Transformer une solution technique en discours clair et percutant pour convaincre des décideurs non techniques."
         }
     ],
