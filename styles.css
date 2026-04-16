@@ -2712,3 +2712,6 @@ a {
         right: -12px;
     }
 }
+.bg-white {
+    background-color: #ffffff !important;
+}
