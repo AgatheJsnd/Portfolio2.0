@@ -614,6 +614,13 @@ const portfolioData = {
             outils: ["Claude", "Make", "Dust"],
             objectif: "Permettre des décisions rapides et éclairées grâce à une vision unifiée du marché."
         },
+        {
+            nom: "Services & Automatisation",
+            type: "Freelance & IA",
+            description: "Accompagnement et automatisation de processus métiers pour des clients freelance en utilisant des outils no-code et des agents IA.",
+            outils: ["Make", "Malt", "Mistral AI"],
+            objectif: "Optimiser la productivité et automatiser les flux de travail complexes."
+        }
     ],
     outils: {
         "v0": { nom: "V0", desc: "Construit interfaces instantanément" },
